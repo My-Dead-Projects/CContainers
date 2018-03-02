@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.9)
-project(LinkedList C)
+project(CContainers C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_library(LinkedList List.c List.h)
+add_library(List List.c List.h)
 
-add_library(HashMap HashSet.c HashSet.h)
+add_library(HashSet HashSet.c HashSet.h)
 
 add_executable(Main main.c)
 
-target_link_libraries(Main LinkedList HashMap)
+target_link_libraries(Main List HashSet)
