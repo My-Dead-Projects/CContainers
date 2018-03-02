@@ -5,6 +5,8 @@ set(CMAKE_C_STANDARD 11)
 
 add_library(LinkedList List.c List.h)
 
+add_library(HashMap HashSet.c HashSet.h)
+
 add_executable(Main main.c)
 
-target_link_libraries(Main LinkedList)
+target_link_libraries(Main LinkedList HashMap)
